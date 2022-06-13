@@ -274,7 +274,7 @@ int main(int argc, char *argv[]) {
 */	strncpy(ifr.ifr_name, ifname, IF_NAMESIZE);
 	
 	if (ioctl(rs, SIOCGIFINDEX, &ifr)) {
-		perror("Interface %s index reading error\n");
+		perror("Interface index reading error\n");
 	}
 	
 	memset(&sll, 0x00, sizeof(sll));
@@ -284,7 +284,7 @@ int main(int argc, char *argv[]) {
 	
 	/*Bind to device by index*/
 	if (bind(rs, (struct sockaddr*)&sll, sizeof(sll)) == -1) {
-			perror("bind down");
+			perror("bind down\n");
 			return -1;
 	}
 			
