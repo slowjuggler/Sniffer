@@ -248,8 +248,8 @@ int main(int argc, char *argv[]) {
 	sll.sll_protocol = htons(ETH_P_ALL);
 	/*Bind to device by index*/
 	if (bind(rs, (struct sockaddr*)&sll, sizeof(sll)) == -1) {
-			perror("bind down");
-			return -1;
+		perror("bind down");
+		return -1;
 	}		
 	signal(SIGTERM, sigkill);
 //	signal(SIGCHLD, sigchld);
