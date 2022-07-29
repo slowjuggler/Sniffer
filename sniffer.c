@@ -2,15 +2,6 @@
 /* Easy Sniffer
  *
  * Author: slowjuggler <atalubr@gmail.com>
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU Lesser General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version. 
- *
- * As a special exception, the copyright holder of this utility give you
- * permission to link this utility with independent modules to produce an
- * executable, regardless of the license terms of these independent modules,
- * and to copy and distribute the resulting executable under terms of your choice.
  */
 
 #include <stdio.h>
